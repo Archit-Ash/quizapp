@@ -1,13 +1,54 @@
+* {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.933);
+}
+li {
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input[type="radio"] {
+  display: none;
+}
+label {
+  position: relative;
+  width: 50vw;
+  height: 5.5em;
+  cursor: pointer;
+  display: inline-flex;
+  border: 1px solid;
+  margin: 1em;
+  border-radius: 5px;
+  background-color: rgba(252, 186, 176, 0.243);
+  align-items: center;
+}
+
+label:before {
+  content: "";
+  width: 5em;
+  height: 5em;
+  background-image: url("./Group\ 4\ \(1\).svg");
+  background-repeat: no-repeat;
+  margin-right: 1em;
+}
+input[type="radio"]:checked + label::before {
+  background-image: url("./Group\ 4\ \(2\).svg");
+  background-repeat: no-repeat;
+}
+input[type="radio"]:checked + label {
+  background-color: rgba(0, 128, 0, 0.167);
+  color: green;
+}
+button {
+  display: inline;
+  width: 7em;
+  height: 3em;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  cursor: pointer;
 }
